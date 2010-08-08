@@ -1,0 +1,194 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="name" type="java.lang.String" value="Form" noResource="true"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="GroupComboBox" alignment="0" max="32767" attributes="1"/>
+                          <Component id="FirstNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="FirstNameField" alignment="0" pref="164" max="32767" attributes="1"/>
+                          <Component id="TCPLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="TCPField" alignment="0" min="-2" pref="49" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="AddPatientButton" pref="106" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="CancelButton" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="DateOfDiagnosisLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="SurnameLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="SurnameField" pref="177" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="DiagnosisDayField" min="-2" pref="29" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="DiagnosisMonthField" min="-2" pref="31" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="DiagnosisYearField" min="-2" pref="45" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="FirstNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="SurnameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="FirstNameField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="SurnameField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="TCPLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="DateOfDiagnosisLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="TCPField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="DiagnosisDayField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="DiagnosisMonthField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="DiagnosisYearField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="GroupComboBox" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="CancelButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AddPatientButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="FirstNameLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="FirstNameLabel.text"/>
+        <Property name="name" type="java.lang.String" value="FirstNameLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="SurnameLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="SurnameLabel.text"/>
+        <Property name="name" type="java.lang.String" value="SurnameLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TCPLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="TCPLabel.text"/>
+        <Property name="name" type="java.lang.String" value="TCPLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="FirstNameField">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="FirstNameField.text"/>
+        <Property name="name" type="java.lang.String" value="FirstNameField" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="SurnameField">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="SurnameField.text"/>
+        <Property name="name" type="java.lang.String" value="SurnameField" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="TCPField">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="TCPField.text"/>
+        <Property name="name" type="java.lang.String" value="TCPField" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="DateOfDiagnosisLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="DateOfDiagnosisLabel.text"/>
+        <Property name="name" type="java.lang.String" value="DateOfDiagnosisLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="DiagnosisDayField">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="DiagnosisDayField.text"/>
+        <Property name="name" type="java.lang.String" value="DiagnosisDayField" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="DiagnosisMonthField">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="DiagnosisMonthField.text"/>
+        <Property name="name" type="java.lang.String" value="DiagnosisMonthField" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="DiagnosisYearField">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="DiagnosisYearField.text"/>
+        <Property name="name" type="java.lang.String" value="DiagnosisYearField" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="jLabel1.text"/>
+        <Property name="name" type="java.lang.String" value="jLabel1" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="GroupComboBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Item 1"/>
+            <StringItem index="1" value="Item 2"/>
+            <StringItem index="2" value="Item 3"/>
+            <StringItem index="3" value="Item 4"/>
+          </StringArray>
+        </Property>
+        <Property name="name" type="java.lang.String" value="GroupComboBox" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="CancelButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="CancelButton.text"/>
+        <Property name="name" type="java.lang.String" value="CancelButton" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="AddPatientButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="AddPatientButton.text"/>
+        <Property name="name" type="java.lang.String" value="AddPatientButton" noResource="true"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
