@@ -124,6 +124,11 @@ public class PatientWaitingListView extends FrameView {
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(patientwaitinglist.PatientWaitingListApp.class).getContext().getResourceMap(PatientWaitingListView.class);
         AddPatientButton.setText(resourceMap.getString("AddPatientButton.text")); // NOI18N
         AddPatientButton.setName("AddPatientButton"); // NOI18N
+        AddPatientButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AddPatientButtonMouseClicked(evt);
+            }
+        });
 
         RemovePatientButton.setText(resourceMap.getString("RemovePatientButton.text")); // NOI18N
         RemovePatientButton.setName("RemovePatientButton"); // NOI18N
@@ -142,8 +147,8 @@ public class PatientWaitingListView extends FrameView {
                 .addComponent(RemovePatientButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(OptimiseListButton)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(list1, javax.swing.GroupLayout.DEFAULT_SIZE, 323, Short.MAX_VALUE)
+                .addContainerGap(17, Short.MAX_VALUE))
+            .addComponent(list1, javax.swing.GroupLayout.DEFAULT_SIZE, 366, Short.MAX_VALUE)
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -196,13 +201,13 @@ public class PatientWaitingListView extends FrameView {
         statusPanel.setLayout(statusPanelLayout);
         statusPanelLayout.setHorizontalGroup(
             statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(statusPanelSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 323, Short.MAX_VALUE)
+            .addComponent(statusPanelSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 366, Short.MAX_VALUE)
             .addGroup(statusPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(statusMessageLabel)
                     .addComponent(jLabel1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 106, Short.MAX_VALUE)
                 .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(statusAnimationLabel)
@@ -226,6 +231,11 @@ public class PatientWaitingListView extends FrameView {
         setMenuBar(menuBar);
         setStatusBar(statusPanel);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void AddPatientButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddPatientButtonMouseClicked
+        new AddPatientForm(null, true).setVisible(true);
+        
+    }//GEN-LAST:event_AddPatientButtonMouseClicked
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AddPatientButton;
